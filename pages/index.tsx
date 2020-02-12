@@ -15,6 +15,10 @@ const Headlines = styled.div`
 	padding: 2rem;
 `;
 
+const WhatIsYanniz0rText = styled.span`
+	color: rgba(0,0,0,0.5);
+`;
+
 const thingsThatYanniz0rIs = [
 	"software developer",
 	"musician",
@@ -32,7 +36,7 @@ const Home = () => (
 		<FullSizeContainer>
 			<Headlines>
 				<h1>Moin, my name is Yannic Inselmann</h1>
-				<h2>I'm a <PseudoTyper words={thingsThatYanniz0rIs}/>.</h2>
+				<h2>I'm a <WhatIsYanniz0rText><PseudoTyper words={thingsThatYanniz0rIs}/></WhatIsYanniz0rText>.</h2>
 			</Headlines>
 		</FullSizeContainer>
 	</div>
