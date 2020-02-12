@@ -24,7 +24,8 @@ const thingsThatYanniz0rIs = [
 	"musician",
 	"photographer",
 	"fan of owls",
-	"nice dude to hang out with"
+	"nice dude to hang out with",
+	"kind of a slow typer.."
 ];
 
 const Home = () => (

@@ -27,7 +27,7 @@ export const PseudoTyper: FC<PseudoTyperProps> = ({ words }) => {
                 } else {
                     setCurrentLetterIndex(currentLetterIndex + 1);
                 }
-            }, 50 + Math.random() * 100);
+            }, 50 + Math.random() * 200);
         } else {
             timeoutId = setTimeout(() => {
                 if (currentLetterIndex > 0) {
