@@ -1,7 +1,12 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-    body {
-        background: red;
+    @font-face {
+        font-family: "JetBrains Mono";
+        src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+    }
+
+    body {
+        font-family: "JetBrains Mono"
     }
 `;
