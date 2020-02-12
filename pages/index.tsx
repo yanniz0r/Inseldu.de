@@ -6,7 +6,6 @@ import styled from 'styled-components'
 const FullSizeContainer = styled.div`
 	min-width: 100vw;
 	min-height: 100vh;
-	background: hotpink;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -22,7 +21,7 @@ const thingsThatYanniz0rIs = [
 	"photographer",
 	"fan of owls",
 	"nice dude to hang out with"
-]
+];
 
 const Home = () => (
 	<div>

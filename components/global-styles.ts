@@ -1,4 +1,16 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, keyframes } from 'styled-components';
+
+const gradientAnimation = keyframes`
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+`;
 
 export const GlobalStyles = createGlobalStyle`
     @font-face {
@@ -7,6 +19,9 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: "JetBrains Mono"
+        font-family: "JetBrains Mono";
+        background: linear-gradient(to bottom right, #5ee7df 0%, #b490ca 100%);
+        background-size: 200% 200%;
+	    animation: ${gradientAnimation} 10s ease infinite;
     }
 `;
