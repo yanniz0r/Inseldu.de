@@ -26,12 +26,12 @@ const SocialLink = styled.a`
         height: 0;
         position: absolute;
         border-radius: 50%;
-        background: rgba(255,255,255, 0.25);
         transition: all 0.25s;
         z-index: -1;
     }
 
     &:hover::after{
+        background: rgba(255,255,255, 0.25);
         width: 100%;
         height: 100%;
     }
