@@ -9,8 +9,9 @@ import {
 const SocialContainer = styled.div``;
 
 const SocialLink = styled.a`
-    height: 3rem;
-    width: 3rem;
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
