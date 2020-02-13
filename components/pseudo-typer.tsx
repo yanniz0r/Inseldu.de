@@ -1,4 +1,4 @@
-import React, { FC, useState, useLayoutEffect, useEffect } from "react";
+import React, { FC, useState, useEffect } from "react";
 
 interface PseudoTyperProps {
     words: string[];
@@ -12,7 +12,7 @@ export const PseudoTyper: FC<PseudoTyperProps> = ({ words }) => {
     const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
     const [isWriting, setWriting] = useState(true);
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         setDisplayedWord(words[currentWordIndex].slice(0, currentLetterIndex));
     }, [currentLetterIndex, currentWordIndex]);
 
