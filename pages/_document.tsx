@@ -16,7 +16,7 @@ export default class Document extends NextDocument {
             ...defaultInitialProps,
             styles: [
                 defaultInitialProps.styles,
-                styleSheet.getStyleElement
+                styleSheet.getStyleElement()
             ]
         };
     }
