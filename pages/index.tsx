@@ -1,14 +1,16 @@
-import React from 'react'
-import Head from 'next/head'
-import { PseudoTyper } from '../components/pseudo-typer'
-import styled from 'styled-components'
+import React from 'react';
+import Head from 'next/head';
+import { PseudoTyper } from '../components/pseudo-typer';
+import styled from 'styled-components';
+import { Social } from '../partials/social';
 
 const FullSizeContainer = styled.div`
 	min-width: 100vw;
 	min-height: 100vh;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 `;
 
 const Headlines = styled.div`
@@ -39,6 +41,7 @@ const Home = () => (
 				<h1>Moin, my name is Yannic Inselmann</h1>
 				<h2>I'm a <WhatIsYanniz0rText><PseudoTyper words={thingsThatYanniz0rIs}/></WhatIsYanniz0rText>.</h2>
 			</Headlines>
+			<Social/>
 		</FullSizeContainer>
 	</div>
 )
