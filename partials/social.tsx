@@ -17,10 +17,23 @@ const SocialLink = styled.a`
     align-items: center;
     border-radius: 50%;
     transition: background 0.25s;
-    color: rgba(0, 0, 0, 0.75);
+    position: relative;
+    color: rgba(0,0,0,0.75);
+    
+    &::after{
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255,255,255, 0.25);
+        transition: all 0.25s;
+        z-index: -1;
+    }
 
-    &:hover {
-        background: rgba(255,255,255,0.25);
+    &:hover::after{
+        width: 100%;
+        height: 100%;
     }
 `;
 
