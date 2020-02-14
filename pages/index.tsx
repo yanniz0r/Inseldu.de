@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { PseudoTyper } from '../components/pseudo-typer';
 import styled from 'styled-components';
 import { Social } from '../partials/social';
+import { Photos } from '../partials/photos';
 
 const FullSizeContainer = styled.div`
 	min-width: 100vw;
@@ -42,6 +43,7 @@ const Home = () => (
 			</Headlines>
 			<Social/>
 		</FullSizeContainer>
+		<Photos/>
 	</div>
 )
 
