@@ -25,7 +25,6 @@ const Photo = styled.img`
 `;
 
 const PhotoWrapper = styled.div<{ description: string }>`
-    background: red;
     position: relative;
     padding-top: ${photoAspectRatioPadding}%;
     overflow: hidden;
@@ -59,8 +58,8 @@ export const Photos: FC = () => {
     return <Wrapper>
         <h1>Some of my photos</h1>
         <PhotosWrapper>
-            {json.map(photo =>
-                <PhotoWrapper description={photo.description}>
+            {json.map((photo, index) =>
+                <PhotoWrapper description={photo.description} key={`gallery-image-${index}`}>
                     <Photo src={photo.url} alt={photo.description}/>
                 </PhotoWrapper>
             )}
