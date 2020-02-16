@@ -1,6 +1,6 @@
 import React, { FC, useState, useEffect } from "react";
 import styled from "styled-components";
-import { ImagesAPIResponse } from "../types/api";
+import json from '../data/gallery-data.json';
 
 const photoAspectRatioPadding = (9 / 16) * 100;
 
@@ -33,32 +33,14 @@ const PhotoWrapper = styled.div`
 
 // TODO Considerations regarding non landscape pictures
 export const Photos: FC = () => {
-    const [photos, setPhotos] = useState<ImagesAPIResponse>()
-    const [isLoading, setLoading] = useState(true);
-
-    useEffect(() => {
-        fetch("/api/images")
-            .then((response) => response.json())
-            .then((response: ImagesAPIResponse) => {
-                setPhotos(response);
-                setLoading(false);
-            })
-    }, []);
-
-
     return <Wrapper>
         <h1>Some of my photos</h1>
-        {isLoading &&
-            <h2>Loading the good stuff...</h2>
-        }
-        {!isLoading &&
-            <PhotosWrapper>
-                {photos?.map(photo =>
-                    <PhotoWrapper>
-                        <Photo src={photo.url} alt={photo.title}/>
-                    </PhotoWrapper>
-                )}
-            </PhotosWrapper>
-        }
+        <PhotosWrapper>
+            {json.map(photo =>
+                <PhotoWrapper>
+                    <Photo src={photo.url} alt={photo.description}/>
+                </PhotoWrapper>
+            )}
+        </PhotosWrapper>
     </Wrapper>
 }
