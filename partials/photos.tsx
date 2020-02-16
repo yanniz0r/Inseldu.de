@@ -24,11 +24,34 @@ const Photo = styled.img`
     max-width: 100%;
 `;
 
-const PhotoWrapper = styled.div`
+const PhotoWrapper = styled.div<{ description: string }>`
     background: red;
     position: relative;
     padding-top: ${photoAspectRatioPadding}%;
     overflow: hidden;
+
+    &::before {
+        transition: all 0.25s;
+        content: "${props => props.description}";
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 10;
+        backdrop-filter: blur(8px);
+        padding: 8px;
+        text-align: center;
+    }
+
+    &:hover::before{
+        opacity: 1;
+    }
 `;
 
 // TODO Considerations regarding non landscape pictures
@@ -37,7 +60,7 @@ export const Photos: FC = () => {
         <h1>Some of my photos</h1>
         <PhotosWrapper>
             {json.map(photo =>
-                <PhotoWrapper>
+                <PhotoWrapper description={photo.description}>
                     <Photo src={photo.url} alt={photo.description}/>
                 </PhotoWrapper>
             )}
