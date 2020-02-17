@@ -4,6 +4,7 @@ import { PseudoTyper } from '../components/pseudo-typer';
 import styled from 'styled-components';
 import { Social } from '../partials/social';
 import { Photos } from '../partials/photos';
+import { References } from '../partials/references';
 
 const FullSizeContainer = styled.div`
 	min-width: 100vw;
@@ -44,6 +45,7 @@ const Home = () => (
 			<Social/>
 		</FullSizeContainer>
 		<Photos/>
+		<References/>
 	</div>
 )
 
