@@ -12,8 +12,12 @@ const Wrapper = styled.div`
 
 const PhotosWrapper = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 720px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 const Photo = styled.img`
