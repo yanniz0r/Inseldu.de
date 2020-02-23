@@ -31,6 +31,22 @@ const SliderActions = styled.div`
     align-items: center;
 `;
 
+const SliderAction = styled.a`
+    display: flex;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    padding: 16px;
+`;
+
+const PrevLink = styled(SliderAction)`
+    left: 0;
+`;
+
+const NextLink = styled(SliderAction)`
+    right: 0;
+`;
+
 export const Slider: FC = ({ children }) => {
     const [activeSlide, setActiveSlide] = useState(0);
 
@@ -44,14 +60,12 @@ export const Slider: FC = ({ children }) => {
     useDebugValue(activeSlide);
 
     return <SliderWrapper>
-        <SliderActions>
-            <a onClick={previousSlide}>
-                <FaChevronLeft/>
-            </a>
-            <a onClick={nextSlide}>
-                <FaChevronRight/>
-            </a>
-        </SliderActions>
+        <PrevLink onClick={previousSlide}>
+            <FaChevronLeft/>
+        </PrevLink>
+        <NextLink onClick={nextSlide}>
+            <FaChevronRight/>
+        </NextLink>
         <SlideWrapper active={activeSlide}>
             {children}
         </SlideWrapper>
