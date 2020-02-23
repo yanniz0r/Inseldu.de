@@ -1,4 +1,4 @@
-import React, { FC, useState, Children } from "react";
+import React, { FC, useState, Children, useDebugValue } from "react";
 import styled from "styled-components";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
@@ -28,13 +28,14 @@ export const Slider: FC = ({ children }) => {
     const [activeSlide, setActiveSlide] = useState(0);
 
     const previousSlide = () => {
-        setActiveSlide(activeSlide <= 0 ? Children.count(children) : activeSlide - 1);
+        setActiveSlide(activeSlide <= 0 ? Children.count(children) - 1 : activeSlide - 1);
     }
 
     const nextSlide = () => {
         setActiveSlide((activeSlide + 1) % Children.count(children));
     }
-    
+    useDebugValue(activeSlide);
+
     return <SliderWrapper>
         <a onClick={previousSlide}>
             <FaChevronLeft/>
