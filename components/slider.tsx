@@ -4,16 +4,13 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export const Slide = styled.div`
     width: 100%;
-    padding: 0 16px;
+    padding: 0 64px;
 `;
 
 const SliderWrapper = styled.div`
     width: 100%;
     position: relative;
     align-items: center;
-    display: grid;
-    grid-template-columns: min-content auto min-content;
-    overflow: hidden;
 `;
 
 const SlideWrapper = styled.div<{ active: number }>`
@@ -22,6 +19,16 @@ const SlideWrapper = styled.div<{ active: number }>`
     width: ${props => Children.count(props.children) * 100}%;
     margin-left: -${props => props.active * 100}%;
     transition: all 1.25s;
+`;
+
+const SliderActions = styled.div`
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: min-content min-content;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 export const Slider: FC = ({ children }) => {
@@ -37,14 +44,16 @@ export const Slider: FC = ({ children }) => {
     useDebugValue(activeSlide);
 
     return <SliderWrapper>
-        <a onClick={previousSlide}>
-            <FaChevronLeft/>
-        </a>
+        <SliderActions>
+            <a onClick={previousSlide}>
+                <FaChevronLeft/>
+            </a>
+            <a onClick={nextSlide}>
+                <FaChevronRight/>
+            </a>
+        </SliderActions>
         <SlideWrapper active={activeSlide}>
             {children}
         </SlideWrapper>
-        <a onClick={nextSlide}>
-            <FaChevronRight/>
-        </a>
     </SliderWrapper>
 }
