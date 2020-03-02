@@ -22,6 +22,7 @@ const PhotosWrapper = styled.div`
 
 const Photo = styled.img`
     display: block;
+    border-radius: 4px;
     position: absolute;
     left: 0;
     top: 0;
