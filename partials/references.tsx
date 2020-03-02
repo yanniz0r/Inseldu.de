@@ -27,8 +27,13 @@ const ReferenceContent = styled.div`
     align-items: center;
 `;
 
+const ReferenceParagraph = styled.p`
+    font-family: 'Helvetica', 'Arial';
+`;
+
 const ReferenceLink = styled.a`
     background: rgba(255,255,255,0.78);
+    display: inline-block;
     padding: 8px 16px;
     color: black;
     text-decoration: none;
@@ -58,10 +63,10 @@ export const References = () => {
                     <ReferenceContent>
                         <div>
                             <h3>Mysticalsouls.de</h3>
-                            <p>
+                            <ReferenceParagraph>
                                 This project consisted of the concept, development and deployment of a personal blog.
                                 It's based on the CMS system Wordpress which is customized by a theme custom tailored for this site.
-                            </p>
+                            </ReferenceParagraph>
                             <ReferenceLink href="http://mysticalsouls.de">See live in action</ReferenceLink>
                         </div>
                     </ReferenceContent>
