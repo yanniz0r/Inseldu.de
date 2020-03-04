@@ -33,6 +33,7 @@ const PhotoWrapper = styled.div<{ description: string }>`
     position: relative;
     padding-top: ${photoAspectRatioPadding}%;
     overflow: hidden;
+    transition: all 0.25s;
 
     &::before {
         transition: all 0.25s;
@@ -55,6 +56,10 @@ const PhotoWrapper = styled.div<{ description: string }>`
 
     &:hover::before{
         opacity: 1;
+    }
+
+    &:hover {
+        transform: scale(1.025);
     }
 `;
 
