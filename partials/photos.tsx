@@ -1,6 +1,7 @@
 import React, { FC, useState, useEffect } from "react";
 import styled from "styled-components";
 import json from '../data/gallery-data.json';
+import { Appear } from "../components/appear";
 
 const photoAspectRatioPadding = (9 / 16) * 100;
 
@@ -69,9 +70,11 @@ export const Photos: FC = () => {
         <h1>Some of my photos</h1>
         <PhotosWrapper>
             {json.map((photo, index) =>
-                <PhotoWrapper description={photo.description} key={`gallery-image-${index}`}>
-                    <Photo src={photo.url} alt={photo.description}/>
-                </PhotoWrapper>
+                <Appear delay={index * 0.5}>
+                    <PhotoWrapper description={photo.description} key={`gallery-image-${index}`}>
+                        <Photo src={photo.url} alt={photo.description}/>
+                    </PhotoWrapper>
+                </Appear>
             )}
         </PhotosWrapper>
     </Wrapper>
