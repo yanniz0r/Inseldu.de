@@ -36,6 +36,7 @@ const SliderAction = styled.a`
     height: 100%;
     position: absolute;
     align-items: center;
+    cursor: pointer;
     padding: 16px;
 `;
 
