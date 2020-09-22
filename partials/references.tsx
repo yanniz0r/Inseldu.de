@@ -8,18 +8,27 @@ const ReferencesWrapper = styled.div`
 
 const ReferenceImage = styled.img`
     max-width: 100%;
+    max-height: 500px;
 `;
 
 const ReferenceImageWrapper = styled.div`
-    max-height: 90vh;
     border-radius: 4px;
+    flex: 1;
+    justify-content: center;
+    display: flex;
     overflow: hidden;
+`;
+
+const ReferenceList = styled.ul`
+    font-family: 'Helvetica', 'Arial';
 `;
 
 const ReferenceWrapper = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
     grid-gap: 32px;
+    max-width: 1024px;
+    margin: 0 auto;
 `;
 
 const ReferenceContent = styled.div`
@@ -42,6 +51,26 @@ const ReferenceLink = styled.a`
 export const References = () => {
     return <ReferencesWrapper>
         <Slider>
+            <Slide>
+                <ReferenceWrapper>
+                    <ReferenceImageWrapper>
+                        <ReferenceImage src="/images/references/partymate.png"/>
+                    </ReferenceImageWrapper>
+                    <ReferenceContent>
+                        <div>
+                            <h3>PartyMate</h3>
+                            <ReferenceParagraph>A project about finding a suitable party for your night out.</ReferenceParagraph>
+                            <ReferenceList>
+                                <li>Lead developer of user facing apps for the platforms web, iOS and android</li>
+                                <li>Development of the backend</li>
+                                <li>Operation of applications</li>
+                                <li>Process optimization through continuous deployment and continuous integration</li>
+                            </ReferenceList>
+                            <ReferenceLink href="https://partymate.party">See live in action</ReferenceLink>
+                        </div>
+                    </ReferenceContent>
+                </ReferenceWrapper>
+            </Slide>
             <Slide>
                 <ReferenceWrapper>
                     <ReferenceImageWrapper>
