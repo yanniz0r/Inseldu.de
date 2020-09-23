@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { 
     FaGithub,
     FaLinkedin,
-    FaInstagram
+    FaInstagram,
+    FaTwitter,
 } from "react-icons/fa";
 
 const SocialContainer = styled.div``;
@@ -44,6 +45,9 @@ export const Social: FC = () => {
         </SocialLink>
         <SocialLink href="https://www.instagram.com/yanniz0r/">
             <FaInstagram/>
+        </SocialLink>
+        <SocialLink href="https://twitter.com/yanniz0r">
+            <FaTwitter/>
         </SocialLink>
         <SocialLink href="https://www.linkedin.com/in/yannic-inselmann-7178a415a/">
             <FaLinkedin/>
