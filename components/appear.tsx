@@ -31,8 +31,6 @@ export const Appear: FC<AppearProps> = (props) => {
         }
     }, []);
 
-    console.log(isVisible)
-
     return <Hider visible={isVisible} ref={hiderRef} delay={props.delay || 0}>
         {props.children}
     </Hider>
