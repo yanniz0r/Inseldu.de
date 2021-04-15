@@ -23,5 +23,6 @@ export const GlobalStyles = createGlobalStyle`
         background: linear-gradient(to bottom right, #5ee7df 0%, #b490ca 100%);
         background-size: 200% 200%;
 	    animation: ${gradientAnimation} 10s ease infinite;
+	    overflow-x: hidden;
     }
 `;
