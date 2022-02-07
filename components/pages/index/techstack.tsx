@@ -17,12 +17,13 @@ import {
 } from "react-icons/si";
 import { MdHttp } from "react-icons/md";
 import TechnologyTile from "../../technology-tile";
+import Section from "../../section";
 
 interface TechstackProps {}
 
 const Techstack: FC<TechstackProps> = (props) => {
   return (
-    <div className="border-t-2 border-slate-100 p-28 dark:border-slate-800 dark:bg-slate-900">
+    <Section>
       <h2 className="text-center text-4xl font-extrabold text-slate-900 dark:text-slate-50">
         Techstack
       </h2>
@@ -63,7 +64,7 @@ const Techstack: FC<TechstackProps> = (props) => {
             </h3>
             <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<FaReact />} color="#00d8ff" dark>
-                React
+                React (Web & Native)
               </TechnologyTile>
               <TechnologyTile icon={<FaVuejs />} color="#42b883" dark>
                 Vue
@@ -123,7 +124,7 @@ const Techstack: FC<TechstackProps> = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 
