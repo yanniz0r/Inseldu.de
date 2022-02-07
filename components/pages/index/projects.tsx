@@ -75,6 +75,20 @@ const Projects: FC<ProjectsProps> = (props) => {
               by just listening to them.
             </p>
           </ProjectCard>
+          <ProjectCard
+            title="Reverb Ordermanager"
+            type="Fullstack"
+            imageURL="/reverb-order-manager.png"
+            imageWidth={600}
+            imageHeight={400}
+          >
+            <p>
+              I've been requested to improve the shipping process of small German music instrument builder who is selling his products through Reverb.
+            </p>
+            <p>
+              This application fetches orders awaiting shipment from reverb and allows to create a DHL delivery. It also provides presets for customs declaration, package sizes and a history of sent packages.
+            </p>
+          </ProjectCard>
         </div>
       </div>
     </div>
