@@ -9,7 +9,7 @@ interface ProjectsProps {}
 const Projects: FC<ProjectsProps> = (props) => {
   const { t } = useTranslation("index-page");
   return (
-    <Section>
+    <Section id="projects">
       <h2 className="text-center text-4xl font-extrabold text-slate-900 dark:text-slate-50">
         Projects
       </h2>

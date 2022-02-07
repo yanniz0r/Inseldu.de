@@ -22,10 +22,10 @@ const Hero: FC<HeroProps> = (props) => {
             {t("hero.what")}
           </p>
           <div className="mt-5 flex gap-5">
-            <Button color="primary" variant="outlined">
+            <Button color="primary" variant="outlined" href="https://www.xing.com/profile/Yannic_Inselmann">
               {t("hero.contactCTA")}
             </Button>
-            <Button color="primary" variant="solid" href="">
+            <Button color="primary" variant="solid" href="#projects">
               {t("hero.projectsCTA")}
             </Button>
           </div>
