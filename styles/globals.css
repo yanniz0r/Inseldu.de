@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/lato/Lato-Regular.ttf') format('truetype');
+  src: url("/fonts/lato/Lato-Regular.ttf") format("truetype");
 }
 
 /* * {
