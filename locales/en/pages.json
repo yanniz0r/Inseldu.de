@@ -1,5 +1,9 @@
 {
   "index-page": {
+    "title": "Yannic Inselmann",
+    "meta": {
+      "description": "Hello, my name is Yannic Inselmann. I'm a software developer from germany with focus on webdevelopment. Learn more about me and my work..."
+    },
     "hero": {
       "hello": "Hello, my name is",
       "name": "Yannic Inselmann",
