@@ -32,12 +32,7 @@ const Projects: FC<ProjectsProps> = (props) => {
           imageHeight={470}
           imageURL="/binckebanck.png"
         >
-          <Paragraphs text={t("projects.partymate.description")} />
-          <p>
-            A good and reliable project for Lars Binckebanck. This projects
-            focused on simple static pages and a blog around the well known
-            content management system Wordpress.
-          </p>
+          <Paragraphs text={t("projects.binckebanck.description")} />
         </ProjectCard>
         <ProjectCard
           title={t("projects.memoryMachine.title")}

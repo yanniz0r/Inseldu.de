@@ -8,7 +8,7 @@ const Hero: FC<HeroProps> = (props) => {
   const { t } = useTranslation("index-page");
   return (
     <div className="relative h-screen lg:grid lg:grid-cols-2">
-      <div className="relative z-10 flex h-screen w-full items-center bg-gray-100 bg-opacity-50 bg-opacity-90 dark:bg-slate-800 lg:bg-opacity-100 dark:lg:bg-opacity-100">
+      <div className="relative z-10 flex h-screen w-full items-center bg-gray-100 bg-opacity-90 dark:bg-slate-800 lg:bg-opacity-100 dark:lg:bg-opacity-100">
         <div className="flex flex-col gap-5 px-10 lg:px-28">
           <small className="text-2xl font-light text-slate-900 dark:text-slate-200">
             {t("hero.hello")}
