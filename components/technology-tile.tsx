@@ -15,11 +15,11 @@ const TechnologyTile: FC<TechnologyTileProps> = (props) => {
     }
   );
   return (
-    <div className="inline-flex items-center dark:bg-slate-800 bg-slate-100 rounded-full outline-4 outline-double outline-offset-4 dark:outline-teal-400 outline-teal-500">
+    <div className="inline-flex items-center rounded-full bg-slate-100 outline-double outline-4 outline-offset-4 outline-teal-500 dark:bg-slate-800 dark:outline-teal-400">
       <div className={iconClassName} style={{ backgroundColor: props.color }}>
         {props.icon}
       </div>
-      <div className="pl-4 pr-5 dark:text-slate-300 text-slate-500">
+      <div className="pl-4 pr-5 text-slate-500 dark:text-slate-300">
         {props.children}
       </div>
     </div>

@@ -11,7 +11,7 @@ interface DarkModeSwitchProps {
 const DarkModeSwitch: FC<DarkModeSwitchProps> = (props) => {
   return (
     <button
-      className="fixed bottom-8 left-8 bg-white dark:bg-slate-700 shadow bg-opacity-50 backdrop-blur p-3 rounded-full dark:text-white border dark:border-slate-600 hover:text-orange-400 dark:hover:text-yellow-200 z-20 transition-all"
+      className="fixed bottom-8 left-8 z-20 rounded-full border bg-white bg-opacity-50 p-3 shadow backdrop-blur transition-all hover:text-orange-400 dark:border-slate-600 dark:bg-slate-700 dark:text-white dark:hover:text-yellow-200"
       onClick={() => {
         props.setTheme(props.theme === "dark" ? "light" : "dark");
       }}

@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = (props) => {
   return (
-    <div className="rounded-lg overflow-hidden bg-white dark:bg-slate-800 shadow-xl flex flex-col">
+    <div className="flex flex-col overflow-hidden rounded-lg bg-white shadow-xl dark:bg-slate-800">
       <Image
         src={props.imageURL}
         alt={`${props.title} (${props.type})`}
@@ -23,12 +23,12 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
         height={props.imageHeight}
         width={props.imageWidth}
       />
-      <div className="p-5 flex flex-col flex-grow">
+      <div className="flex flex-grow flex-col p-5">
         <div className=" flex-grow">
-          <small className="text-indigo-700 dark:text-indigo-400 font-semibold text-xs">
+          <small className="text-xs font-semibold text-indigo-700 dark:text-indigo-400">
             {props.type}
           </small>
-          <h3 className="font-bold text-2xl mb-2 dark:text-slate-50">
+          <h3 className="mb-2 text-2xl font-bold dark:text-slate-50">
             {props.title}
           </h3>
           <div className="flex-grow text-slate-600 dark:text-slate-400">
@@ -36,7 +36,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
           </div>
         </div>
         {(props.url || props.githubURL) && (
-          <div className="flex mt-5 gap-2">
+          <div className="mt-5 flex gap-2">
             {props.url && (
               <Button
                 variant="solid"

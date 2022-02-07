@@ -22,11 +22,11 @@ interface TechstackProps {}
 
 const Techstack: FC<TechstackProps> = (props) => {
   return (
-    <div className="p-28 dark:bg-slate-900 border-t-2 border-slate-100 dark:border-slate-800">
-      <h2 className="text-4xl font-extrabold text-slate-900 dark:text-slate-50 text-center">
+    <div className="border-t-2 border-slate-100 p-28 dark:border-slate-800 dark:bg-slate-900">
+      <h2 className="text-center text-4xl font-extrabold text-slate-900 dark:text-slate-50">
         Techstack
       </h2>
-      <p className="text-center text-xl text-slate-500 mt-5">
+      <p className="mt-5 text-center text-xl text-slate-500">
         I believe that each problem deserves to be resolved with technology that
         fits the use case. However, the following tools, frameworks and
         methodologies proofed themselves as helpful in my past projects. You
@@ -34,12 +34,12 @@ const Techstack: FC<TechstackProps> = (props) => {
         curious to get to know technologies though.
       </p>
       <div className="mt-14">
-        <div className="grid lg:grid-cols-2 gap-10 xl:grid-cols-3 justify-start">
+        <div className="grid justify-start gap-10 lg:grid-cols-2 xl:grid-cols-3">
           <div>
-            <h3 className="text-slate-500 font-semibold text-xs dark:text-slate-300 uppercase">
+            <h3 className="text-xs font-semibold uppercase text-slate-500 dark:text-slate-300">
               Languages & Runtimes
             </h3>
-            <div className="flex gap-5 mt-5 flex-wrap">
+            <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<SiTypescript />} color="#3178c6" dark>
                 TypeScript
               </TechnologyTile>
@@ -58,10 +58,10 @@ const Techstack: FC<TechstackProps> = (props) => {
             </div>
           </div>
           <div>
-            <h3 className="text-slate-500 font-semibold text-xs dark:text-slate-300 uppercase">
+            <h3 className="text-xs font-semibold uppercase text-slate-500 dark:text-slate-300">
               Frontend
             </h3>
-            <div className="flex gap-5 mt-5 flex-wrap">
+            <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<FaReact />} color="#00d8ff" dark>
                 React
               </TechnologyTile>
@@ -74,10 +74,10 @@ const Techstack: FC<TechstackProps> = (props) => {
             </div>
           </div>
           <div>
-            <h3 className="text-slate-500 font-semibold text-xs dark:text-slate-300 uppercase">
+            <h3 className="text-xs font-semibold uppercase text-slate-500 dark:text-slate-300">
               APIs
             </h3>
-            <div className="flex gap-5 mt-5 flex-wrap">
+            <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<SiGraphql />} color="#e535ab" dark>
                 GraphQL
               </TechnologyTile>
@@ -87,10 +87,10 @@ const Techstack: FC<TechstackProps> = (props) => {
             </div>
           </div>
           <div>
-            <h3 className="text-slate-500 font-semibold text-xs dark:text-slate-300 uppercase">
+            <h3 className="text-xs font-semibold uppercase text-slate-500 dark:text-slate-300">
               Operations & Hosting
             </h3>
-            <div className="flex gap-5 mt-5 flex-wrap">
+            <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<FaAws />} color="#ff9900" dark>
                 AWS
               </TechnologyTile>
@@ -103,10 +103,10 @@ const Techstack: FC<TechstackProps> = (props) => {
             </div>
           </div>
           <div>
-            <h3 className="text-slate-500 font-semibold text-xs dark:text-slate-300 uppercase">
+            <h3 className="text-xs font-semibold uppercase text-slate-500 dark:text-slate-300">
               Databases
             </h3>
-            <div className="flex gap-5 mt-5 flex-wrap">
+            <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<SiMongodb />} color="#589636" dark>
                 MongoDB
               </TechnologyTile>

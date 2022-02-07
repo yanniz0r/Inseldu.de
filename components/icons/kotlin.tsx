@@ -10,7 +10,7 @@ const KotlinIcon: FC<KotlinIconProps> = (props) => {
       viewBox="0 0 64 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="transform scale-50"
+      className="scale-50 transform"
     >
       <path
         d="M64 64H0V0H64L31.3373 31.5369L64 64Z"
