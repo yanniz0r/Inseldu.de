@@ -14,13 +14,15 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: FC<ProjectCardProps> = (props) => {
-  return <div className="rounded-lg overflow-hidden bg-white dark:bg-slate-800 shadow-xl break-inside-avoid-column">
+  return <div className="rounded-lg overflow-hidden bg-white dark:bg-slate-800 shadow-xl flex flex-col">
     <Image src={props.imageURL} alt={`${props.title} (${props.type})`} objectFit="cover" height={props.imageHeight} width={props.imageWidth} />
-    <div className="p-5 rounded-b-lg">
-      <small className="text-indigo-700 dark:text-indigo-400 font-semibold text-xs">{props.type}</small>
-      <h3 className="font-bold text-2xl mb-2 dark:text-slate-50">{props.title}</h3>
-      <div className="flex-grow text-slate-600 dark:text-slate-400">
-        {props.children}
+    <div className="p-5 flex flex-col flex-grow">
+      <div className=" flex-grow">
+        <small className="text-indigo-700 dark:text-indigo-400 font-semibold text-xs">{props.type}</small>
+        <h3 className="font-bold text-2xl mb-2 dark:text-slate-50">{props.title}</h3>
+        <div className="flex-grow text-slate-600 dark:text-slate-400">
+          {props.children}
+        </div>
       </div>
       {(props.url || props.githubURL) &&
         <div className="flex mt-5 gap-2">
