@@ -1,0 +1,49 @@
+{
+  "index-page": {
+    "hero": {
+      "hello": "Hello, my name is",
+      "name": "Yannic Inselmann",
+      "what": "I'm lead software developer @ Whiskey Tango Foxtrot, Freelancer and always curious for challenging sideprojects.",
+      "contactCTA": "Get in touch",
+      "projectsCTA": "Projects"
+    },
+    "projects": {
+      "partymate": {
+        "title": "Partymate",
+        "type": "Backend and Mobile",
+        "description": "As part of a great team, I got the opportunity to work on the mobile app Partymate. It's a social network for party fans - definitely worth a try!\nI've been mostly working on the mobile app, backend and infrastructure. Furthermore, I supported other parts of the projects to support continuous deployment."
+      },
+      "binckebanck": {
+        "title": "Binckebanck.com",
+        "type": "Blog",
+        "description": "A good and reliable project for Lars Binckebanck. This projects focused on simple static pages and a blog around the well known content management system Wordpress."
+      },
+      "memoryMachine": {
+        "title": "Memory Machine",
+        "type": "Frontend",
+        "description": "As part of the project \"digital memory\", AMCHA wanted to find digital solutions to provide knowlege about the holocaust. Some very talentend game designers and myself created a digital experience to learn about the holocaust through the second world war."
+      },
+      "sonq": {
+        "title": "Sonq",
+        "type": "Fullstack",
+        "description": "A little song quiz I've been working on in my freetime. It allows you to find out whom of your friends can identify the most songs by just listening to them."
+      },
+      "reverbOrdermanager": {
+        "title": "Reverb Ordermanager",
+        "type": "Fullstack",
+        "description": "I've been requested to improve the shipping process of small German music instrument builder who is selling his products through Reverb.\nThis application fetches orders awaiting shipment from reverb and allows to create a DHL delivery. It also provides presets for customs declaration, package sizes and a history of sent packages."
+      }
+    },
+    "techstack": {
+      "title": "Techstack",
+      "description": "I believe that each problem deserves to be resolved with technology that fits the use case. However, the following tools, frameworks and methodologies proofed themselves as helpful in my past projects. You should see it as a toolbox of technologies the I like to use. I'm always curious to get to know technologies though.",
+      "categories": {
+        "languagesAndRuntimes": "Languages & Runtimes",
+        "frontend": "Frontend",
+        "APIs": "APIs",
+        "operationsAndHosting": "Operations & Hosting",
+        "databases": "Databases"
+      }
+    }
+  }
+}

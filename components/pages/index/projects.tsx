@@ -1,10 +1,13 @@
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
+import Paragraphs from "../../paragraphs";
 import ProjectCard from "../../project-card";
 import Section from "../../section";
 
 interface ProjectsProps {}
 
 const Projects: FC<ProjectsProps> = (props) => {
+  const { t } = useTranslation("index-page");
   return (
     <Section>
       <h2 className="text-center text-4xl font-extrabold text-slate-900 dark:text-slate-50">
@@ -12,32 +15,24 @@ const Projects: FC<ProjectsProps> = (props) => {
       </h2>
       <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         <ProjectCard
-          title="Partymate"
-          type="Backend and Mobile"
+          title={t("projects.partymate.title")}
+          type={t("projects.partymate.type")}
           url="https://partymate.party"
           imageURL="/partymate.png"
           imageWidth={600}
           imageHeight={340}
         >
-          <p>
-            As part of a great team, I got the opportunity to work on the
-            mobile app Partymate. It's a social network for party fans -
-            definitely worth a try!
-          </p>
-          <p>
-            I've been mostly working on the mobile app, backend and
-            infrastructure. Furthermore, I supported other parts of the
-            projects to support continuous deployment.
-          </p>
+          <Paragraphs text={t("projects.partymate.description")} />
         </ProjectCard>
         <ProjectCard
-          title="Binckebanck.com"
-          type="Blog"
+          title={t("projects.binckebanck.title")}
+          type={t("projects.binckebanck.type")}
           url="https://binckebanck.com"
           imageWidth={600}
           imageHeight={470}
           imageURL="/binckebanck.png"
         >
+          <Paragraphs text={t("projects.partymate.description")} />
           <p>
             A good and reliable project for Lars Binckebanck. This projects
             focused on simple static pages and a blog around the well known
@@ -45,49 +40,34 @@ const Projects: FC<ProjectsProps> = (props) => {
           </p>
         </ProjectCard>
         <ProjectCard
-          title="Memory Machine"
-          type="Frontend"
+          title={t("projects.memoryMachine.title")}
+          type={t("projects.memoryMachine.type")}
           url="https://memorymachine.de"
           imageWidth={600}
           imageHeight={350}
           imageURL="/memory-machine.png"
         >
-          <p>
-            As part of the project "digital memory", AMCHA wanted to find
-            digital solutions to provide knowlege about the holocaust. Some
-            very talentend game designers and myself created a digital
-            experience to learn about the holocaust through the second world
-            war.
-          </p>
+          <Paragraphs text={t("projects.memoryMachine.description")} />
         </ProjectCard>
         <ProjectCard
-          title="Sonq"
-          type="Fullstack"
+          title={t("projects.sonq.title")}
+          type={t("projects.sonq.type")}
           githubURL="https://github.com/yanniz0r/sonq"
           url="https://sonq.de"
           imageURL="/sonq.png"
           imageWidth={600}
           imageHeight={400}
         >
-          <p>
-            A little song quiz I've been working on in my freetime. It allows
-            you to find out whom of your friends can identify the most songs
-            by just listening to them.
-          </p>
+          <Paragraphs text={t("projects.sonq.description")} />
         </ProjectCard>
         <ProjectCard
-          title="Reverb Ordermanager"
-          type="Fullstack"
+          title={t("projects.reverbOrdermanager.title")}
+          type={t("projects.reverbOrdermanager.type")}
           imageURL="/reverb-order-manager.png"
           imageWidth={600}
           imageHeight={400}
         >
-          <p>
-            I've been requested to improve the shipping process of small German music instrument builder who is selling his products through Reverb.
-          </p>
-          <p>
-            This application fetches orders awaiting shipment from reverb and allows to create a DHL delivery. It also provides presets for customs declaration, package sizes and a history of sent packages.
-          </p>
+          <Paragraphs text={t("projects.reverbOrdermanager.description")} />
         </ProjectCard>
       </div>
     </Section>

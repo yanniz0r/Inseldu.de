@@ -1,12 +1,10 @@
 import { NextApiHandler } from "next";
-import nodemailer from "nodemailer"
+import nodemailer from "nodemailer";
 
-const mailerPromise = nodemailer.createTestAccount()
+const mailerPromise = nodemailer.createTestAccount();
 
 const contactApiHandler: NextApiHandler = async (request, response) => {
-  nodemailer.createTransport({
-    
-  })
-}
+  nodemailer.createTransport({});
+};
 
-export default contactApiHandler
+export default contactApiHandler;

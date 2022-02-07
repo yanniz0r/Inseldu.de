@@ -1,31 +1,32 @@
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 import Button from "../../button";
 
 interface HeroProps {}
 
 const Hero: FC<HeroProps> = (props) => {
+  const { t } = useTranslation("index-page");
   return (
     <div className="relative h-screen lg:grid lg:grid-cols-2">
-      <div className="relative z-10 flex h-screen w-full items-center bg-gray-100 bg-opacity-50 dark:bg-slate-800 bg-opacity-90 lg:bg-opacity-100 dark:lg:bg-opacity-100">
+      <div className="relative z-10 flex h-screen w-full items-center bg-gray-100 bg-opacity-50 bg-opacity-90 dark:bg-slate-800 lg:bg-opacity-100 dark:lg:bg-opacity-100">
         <div className="flex flex-col gap-5 px-10 lg:px-28">
           <small className="text-2xl font-light text-slate-900 dark:text-slate-200">
-            Hello, my name is
+            {t("hero.hello")}
           </small>
           <div>
             <span className="bg-gradient inline bg-gradient-to-r from-indigo-700 to-emerald-400 box-decoration-clone p-1 text-5xl font-extrabold leading-normal text-white dark:from-indigo-500">
-              Yannic Inselmann
+              {t("hero.name")}
             </span>
           </div>
           <p className="text-2xl font-light text-slate-900 dark:text-slate-200">
-            I'm lead software developer @ Whiskey Tango Foxtrot, Freelancer and
-            always curious for challenging sideprojects.
+            {t("hero.what")}
           </p>
           <div className="mt-5 flex gap-5">
             <Button color="primary" variant="outlined">
-              Get in contact
+              {t("hero.contactCTA")}
             </Button>
             <Button color="primary" variant="solid" href="">
-              Check out Projects
+              {t("hero.projectsCTA")}
             </Button>
           </div>
         </div>

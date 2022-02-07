@@ -2,6 +2,7 @@ import { FC } from "react";
 import Button from "./button";
 import { FaGithub, FaLink } from "react-icons/fa";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 interface ProjectCardProps {
   imageURL: string;
@@ -14,6 +15,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: FC<ProjectCardProps> = (props) => {
+  const { t } = useTranslation("project-card-component");
   return (
     <div className="flex flex-col overflow-hidden rounded-lg bg-white shadow-xl dark:bg-slate-800">
       <Image
@@ -45,7 +47,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                 href={props.url}
                 icon={<FaLink />}
               >
-                Visit
+                {t("visit")}
               </Button>
             )}
             {props.githubURL && (
@@ -56,7 +58,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                 href={props.githubURL}
                 icon={<FaGithub />}
               >
-                Code
+                {t("code")}
               </Button>
             )}
           </div>

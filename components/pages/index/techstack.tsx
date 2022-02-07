@@ -18,27 +18,25 @@ import {
 import { MdHttp } from "react-icons/md";
 import TechnologyTile from "../../technology-tile";
 import Section from "../../section";
+import { useTranslation } from "react-i18next";
 
 interface TechstackProps {}
 
 const Techstack: FC<TechstackProps> = (props) => {
+  const { t } = useTranslation("index-page");
   return (
     <Section>
       <h2 className="text-center text-4xl font-extrabold text-slate-900 dark:text-slate-50">
-        Techstack
+        {t("techstack.title")}
       </h2>
       <p className="mt-5 text-center text-xl text-slate-500">
-        I believe that each problem deserves to be resolved with technology that
-        fits the use case. However, the following tools, frameworks and
-        methodologies proofed themselves as helpful in my past projects. You
-        should see it as a toolbox of technologies the I like to use. I'm always
-        curious to get to know technologies though.
+        {t("techstack.description")}
       </p>
       <div className="mt-14">
         <div className="grid justify-start gap-10 lg:grid-cols-2 xl:grid-cols-3">
           <div>
             <h3 className="text-xs font-semibold uppercase text-slate-500 dark:text-slate-300">
-              Languages & Runtimes
+              {t("techstack.categories.languagesAndRuntimes")}
             </h3>
             <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<SiTypescript />} color="#3178c6" dark>
@@ -60,7 +58,7 @@ const Techstack: FC<TechstackProps> = (props) => {
           </div>
           <div>
             <h3 className="text-xs font-semibold uppercase text-slate-500 dark:text-slate-300">
-              Frontend
+              {t("techstack.categories.frontend")}
             </h3>
             <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<FaReact />} color="#00d8ff" dark>
@@ -76,7 +74,7 @@ const Techstack: FC<TechstackProps> = (props) => {
           </div>
           <div>
             <h3 className="text-xs font-semibold uppercase text-slate-500 dark:text-slate-300">
-              APIs
+              {t("techstack.categories.APIs")}
             </h3>
             <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<SiGraphql />} color="#e535ab" dark>
@@ -89,7 +87,7 @@ const Techstack: FC<TechstackProps> = (props) => {
           </div>
           <div>
             <h3 className="text-xs font-semibold uppercase text-slate-500 dark:text-slate-300">
-              Operations & Hosting
+              {t("techstack.categories.operationsAndHosting")}
             </h3>
             <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<FaAws />} color="#ff9900" dark>
@@ -105,7 +103,7 @@ const Techstack: FC<TechstackProps> = (props) => {
           </div>
           <div>
             <h3 className="text-xs font-semibold uppercase text-slate-500 dark:text-slate-300">
-              Databases
+              {t("techstack.categories.databases")}
             </h3>
             <div className="mt-5 flex flex-wrap gap-5">
               <TechnologyTile icon={<SiMongodb />} color="#589636" dark>
