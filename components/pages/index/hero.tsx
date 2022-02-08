@@ -1,8 +1,19 @@
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
+import getTracker from "../../../utils/tracker";
 import Button from "../../button";
 
 interface HeroProps {}
+
+const tracker = getTracker()
+
+function trackContactClick() {
+  tracker?.trackEvent('hero:contact:click')
+}
+
+function trackProjectsClick() {
+  tracker?.trackEvent('hero:projects:click')
+}
 
 const Hero: FC<HeroProps> = (props) => {
   const { t } = useTranslation("index-page");
@@ -22,10 +33,10 @@ const Hero: FC<HeroProps> = (props) => {
             {t("hero.what")}
           </p>
           <div className="mt-5 flex gap-5">
-            <Button color="primary" variant="outlined" href="https://www.xing.com/profile/Yannic_Inselmann">
+            <Button color="primary" variant="outlined" href="https://www.xing.com/profile/Yannic_Inselmann" onClick={trackContactClick}>
               {t("hero.contactCTA")}
             </Button>
-            <Button color="primary" variant="solid" href="#projects">
+            <Button color="primary" variant="solid" href="#projects" onClick={trackProjectsClick}>
               {t("hero.projectsCTA")}
             </Button>
           </div>

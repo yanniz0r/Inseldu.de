@@ -3,6 +3,7 @@ import Button from "./button";
 import { FaGithub, FaLink } from "react-icons/fa";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import getTracker from "../utils/tracker";
 
 interface ProjectCardProps {
   imageURL: string;
@@ -13,6 +14,8 @@ interface ProjectCardProps {
   url?: string;
   title: string;
 }
+
+const tracker = getTracker()
 
 const ProjectCard: FC<ProjectCardProps> = (props) => {
   const { t } = useTranslation("project-card-component");
@@ -46,6 +49,14 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                 dimension="sm"
                 href={props.url}
                 icon={<FaLink />}
+                onClick={() => {
+                  tracker?.trackEvent('projectcard:visit:click', {
+                    props: {
+                      title: props.title,
+                      url: props.url!,
+                    }
+                  })
+                }}
               >
                 {t("visit")}
               </Button>
@@ -57,6 +68,14 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                 dimension="sm"
                 href={props.githubURL}
                 icon={<FaGithub />}
+                onClick={() => {
+                  tracker?.trackEvent('projectcard:code:click', {
+                    props: {
+                      title: props.title,
+                      url: props.githubURL!,
+                    }
+                  })
+                }}
               >
                 {t("code")}
               </Button>

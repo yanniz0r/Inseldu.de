@@ -14,19 +14,21 @@ const Footer: FC<FooterProps> = (props) => {
         </p>
       </div>
       <div className="flex w-full flex-grow items-center justify-center gap-3 md:w-auto md:justify-end">
-        <SocialLink color="#1da1f2" href="https://twitter.com/yanniz0r">
+        <SocialLink name="Twitter" color="#1da1f2" href="https://twitter.com/yanniz0r">
           <FaTwitter />
         </SocialLink>
-        <SocialLink color="#9146ff" href="https://www.twitch.tv/yanniz0r">
+        <SocialLink name="Twitch" color="#9146ff" href="https://www.twitch.tv/yanniz0r">
           <FaTwitch />
         </SocialLink>
         <SocialLink
+          name="Xing"
           color="#026466"
           href="https://www.xing.com/profile/Yannic_Inselmann"
         >
           <FaXing />
         </SocialLink>
         <SocialLink
+          name="LinkedIn"
           color="#0077b5"
           href="https://de.linkedin.com/in/yannic-inselmann-7178a415a"
         >
