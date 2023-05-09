@@ -1,9 +1,8 @@
 import { FC } from "react";
-import { FaAws, FaReact, FaVuejs } from "react-icons/fa";
+import { FaAws, FaReact, FaVuejs, FaJava } from "react-icons/fa";
 import {
   SiGo,
   SiGraphql,
-  SiJava,
   SiKotlin,
   SiKubernetes,
   SiMongodb,
@@ -20,9 +19,7 @@ import TechnologyTile from "../../technology-tile";
 import Section from "../../section";
 import { useTranslation } from "react-i18next";
 
-interface TechstackProps {}
-
-const Techstack: FC<TechstackProps> = (props) => {
+const Techstack: FC = () => {
   const { t } = useTranslation("index-page");
   return (
     <Section>
@@ -48,7 +45,7 @@ const Techstack: FC<TechstackProps> = (props) => {
               <TechnologyTile icon={<SiKotlin />} color="#404044" dark>
                 Kotlin
               </TechnologyTile>
-              <TechnologyTile icon={<SiJava />} color="#f89820" dark>
+              <TechnologyTile icon={<FaJava />} color="#f89820" dark>
                 Java
               </TechnologyTile>
               <TechnologyTile icon={<SiGo />} color="#00ADD8" dark>

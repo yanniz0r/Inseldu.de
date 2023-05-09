@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { FC, ReactNode } from "react";
+import { FC, PropsWithChildren, ReactNode } from "react";
 
 interface TechnologyTileProps {
   color: string;
@@ -7,7 +7,7 @@ interface TechnologyTileProps {
   dark?: boolean;
 }
 
-const TechnologyTile: FC<TechnologyTileProps> = (props) => {
+const TechnologyTile: FC<PropsWithChildren<TechnologyTileProps>> = (props) => {
   const iconClassName = classNames(
     "h-10 w-10 flex items-center justify-center rounded-full",
     {
