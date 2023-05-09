@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>{t('title')}</title>
-        <meta name="description" content={t('meta.description')} />
+        <meta name="description" content={t('meta.description') as string} />
       </Head>
       <Hero />
       <Projects />
