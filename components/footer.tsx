@@ -2,9 +2,7 @@ import { FC } from "react";
 import { FaLinkedin, FaTwitch, FaTwitter, FaXing } from "react-icons/fa";
 import SocialLink from "./social-link";
 
-interface FooterProps {}
-
-const Footer: FC<FooterProps> = (props) => {
+const Footer: FC = () => {
   const year = new Date().getFullYear();
   return (
     <div className="flex flex-row flex-wrap items-center bg-gradient-to-r from-slate-800 to-slate-700 px-28 py-14 dark:border-t dark:border-t-slate-600">
