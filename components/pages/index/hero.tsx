@@ -19,7 +19,7 @@ function trackProjectsClick() {
 const Hero: FC = () => {
   const { t } = useTranslation("index-page");
   return (
-    <div className="relative h-screen lg:grid lg:grid-cols-2">
+    <div className="relative h-screen lg:grid lg:grid-cols-2 bg">
       <div className="relative z-10 flex h-screen w-full items-center bg-gray-100 bg-opacity-90 dark:bg-slate-800 lg:bg-opacity-100 dark:lg:bg-opacity-100">
         <div className="flex flex-col gap-5 px-10 lg:px-28">
           <Image src={logoPicture} alt="Logo" className="w-56 mx-auto" />
