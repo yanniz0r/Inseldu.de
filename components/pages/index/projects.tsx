@@ -64,6 +64,15 @@ const Projects: FC<ProjectsProps> = (props) => {
         >
           <Paragraphs text={t("projects.reverbOrdermanager.description")} />
         </ProjectCard>
+        <ProjectCard
+          title={t("projects.spicyChances.title")}
+          type={t("projects.spicyChances.type")}
+          imageURL="/spicy-chances.png"
+          imageWidth={600}
+          imageHeight={400}
+        >
+          <Paragraphs text={t("projects.spicyChances.description")} />
+        </ProjectCard>
       </div>
     </Section>
   );

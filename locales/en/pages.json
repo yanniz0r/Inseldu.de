@@ -36,6 +36,11 @@
         "title": "Reverb Ordermanager",
         "type": "Fullstack",
         "description": "I've been requested to improve the shipping process of small German music instrument builder who is selling his products through Reverb.\nThis application fetches orders awaiting shipment from reverb and allows to create a DHL delivery. It also provides presets for customs declaration, package sizes and a history of sent packages."
+      },
+      "spicyChances": {
+        "title": "Spicy Chances",
+        "type": "Frontend",
+        "description": "A website that I've built for my personal music project Spicy Chances. It's very basic so far but it will be a starting point for more features in the future."
       }
     },
     "techstack": {
