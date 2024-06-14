@@ -1,11 +1,11 @@
-import { FC } from "react";
+import { FC, PropsWithChildren } from "react";
 import Button from "./button";
 import { FaGithub, FaLink } from "react-icons/fa";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import getTracker from "../utils/tracker";
 
-interface ProjectCardProps {
+interface ProjectCardProps extends PropsWithChildren {
   imageURL: string;
   imageWidth: number;
   imageHeight: number;

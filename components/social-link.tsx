@@ -1,9 +1,9 @@
 import classNames from "classnames";
-import { FC } from "react";
+import { FC, PropsWithChildren } from "react";
 import getTracker from "../utils/tracker";
 
 const tracker = getTracker()
-interface SocialLinkProps {
+interface SocialLinkProps extends PropsWithChildren {
   name: string
   href: string;
   color: string;
