@@ -3,7 +3,7 @@ import Plausible from "plausible-tracker"
 export default function getTracker() {
   if (typeof window === 'undefined') return
   const plausible = Plausible({
-    apiHost: 'https://analytics.inseldu.de',
+    apiHost: 'https://analytics.coolify.inseldu.de',
     hashMode: true,
   })
 
