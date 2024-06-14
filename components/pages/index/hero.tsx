@@ -1,20 +1,9 @@
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
-import getTracker from "../../../utils/tracker";
 import Button from "../../button";
 import Image from "next/image";
 import meHeroPicture from "../../../public/me-hero.jpg";
 import logoPicture from "./logo.svg";
-
-const tracker = getTracker()
-
-function trackContactClick() {
-  tracker?.trackEvent('hero:contact:click')
-}
-
-function trackProjectsClick() {
-  tracker?.trackEvent('hero:projects:click')
-}
 
 const Hero: FC = () => {
   const { t } = useTranslation("index-page");
@@ -35,10 +24,10 @@ const Hero: FC = () => {
             {t("hero.what")}
           </p>
           <div className="mt-5 flex gap-5">
-            <Button color="primary" variant="outlined" href="https://www.xing.com/profile/Yannic_Inselmann" onClick={trackContactClick}>
+            <Button color="primary" variant="outlined" href="https://www.xing.com/profile/Yannic_Inselmann">
               {t("hero.contactCTA")}
             </Button>
-            <Button color="primary" variant="solid" href="#projects" onClick={trackProjectsClick}>
+            <Button color="primary" variant="solid" href="#projects">
               {t("hero.projectsCTA")}
             </Button>
           </div>

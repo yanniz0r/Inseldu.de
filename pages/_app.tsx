@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <I18nextProvider i18n={i18n}>
       <>
+        <script defer data-domain="inseldu.de" src="https://analytics.coolify.inseldu.de/js/script.js"></script>
         <div className={theme}>
           <DarkModeSwitch theme={theme} setTheme={setTheme} />
           <Component {...pageProps} />

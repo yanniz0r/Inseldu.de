@@ -1,8 +1,6 @@
 import classNames from "classnames";
 import { FC, PropsWithChildren } from "react";
-import getTracker from "../utils/tracker";
 
-const tracker = getTracker()
 interface SocialLinkProps extends PropsWithChildren {
   name: string
   href: string;
@@ -18,17 +16,6 @@ const SocialLink: FC<SocialLinkProps> = (props) => {
       href={props.href}
       className={linkClassName}
       style={{ color: props.color }}
-      onClick={() => {
-        tracker?.trackEvent(
-          "sociallink:click",
-          {
-            props: {
-              name: props.name,
-              url: props.href
-            }
-          }
-        )
-      }}
     >
       {props.children}
     </a>
