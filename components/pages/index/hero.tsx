@@ -4,7 +4,7 @@ import getTracker from "../../../utils/tracker";
 import Button from "../../button";
 import Image from "next/image";
 import meHeroPicture from "../../../public/me-hero.jpg";
-import logoPicture from "../../../public/logo.svg";
+import logoPicture from "./logo.svg";
 
 const tracker = getTracker()
 
