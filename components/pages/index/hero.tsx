@@ -11,12 +11,12 @@ const Hero: FC = () => {
     <div className="relative h-screen lg:grid lg:grid-cols-2 bg">
       <div className="relative z-10 flex h-screen w-full items-center bg-gray-100 bg-opacity-90 dark:bg-slate-800 lg:bg-opacity-100 dark:lg:bg-opacity-100">
         <div className="flex flex-col gap-5 px-10 lg:px-28">
-          <Image src={logoPicture} alt="Logo" className="w-56 mx-auto" />
+          <Image src={logoPicture} alt="Logo" className="w-56 lg:mx-auto dark:invert" />
           <small className="text-2xl font-light text-slate-900 dark:text-slate-200">
             {t("hero.hello")}
           </small>
           <div>
-            <span className="bg-gradient inline bg-gradient-to-r from-indigo-700 to-emerald-400 box-decoration-clone p-1 text-5xl font-extrabold leading-normal text-white dark:from-indigo-500">
+            <span className="bg-gradient inline bg-gradient-to-r from-indigo-700 to-emerald-400 box-decoration-clone p-1 text-5xl font-extrabold leading-normal text-white dark:from-indigo-500 dark:to-emerald-500 rounded-md">
               {t("hero.name")}
             </span>
           </div>
@@ -33,8 +33,8 @@ const Hero: FC = () => {
           </div>
         </div>
       </div>
-      <div className="relative top-0 left-0 z-0 h-full w-full">
-        <Image src={meHeroPicture} alt="Yannic Inselmann" className="absolute w-full h-full left-0 object-cover" />
+      <div className="absolute lg:relative top-0 left-0 z-0 h-full w-full">
+        <Image src={meHeroPicture} alt="Yannic Inselmann" className="w-full h-full object-cover" />
       </div>
     </div>
   );
