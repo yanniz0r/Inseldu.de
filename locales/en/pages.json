@@ -20,7 +20,7 @@
       "binckebanck": {
         "title": "Binckebanck.com",
         "type": "Blog",
-        "description": "A good and reliable project for Prof. Dr. Lars Binckebanck. This projects focused on simple static pages and a blog around the well known content management system Wordpress."
+        "description": "A simple and reliable project for Prof. Dr. Lars Binckebanck. This projects focused on simple static pages and a blog around the well known content management system Wordpress."
       },
       "memoryMachine": {
         "title": "Memory Machine",
@@ -41,6 +41,11 @@
         "title": "Spicy Chances",
         "type": "Frontend",
         "description": "A website that I've built for my personal music project Spicy Chances. It's very basic so far but it will be a starting point for more features in the future."
+      },
+      "invocraft": {
+        "title": "Invocraft",
+        "type": "Fullstack",
+        "description": "A SaaS for creating invoices. I've been working on it as a side project to create an invoicing solution that is easy to use and cheap. It's still in development but I and some of my friends are using it for my their invoices already."
       }
     },
     "techstack": {
