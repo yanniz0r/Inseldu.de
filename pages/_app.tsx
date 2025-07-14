@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <I18nextProvider i18n={i18n}>
       <>
+        <script defer src="https://umami.inselmann.online/script.js" data-website-id="3755d45d-5afa-4d60-bea0-4c55e1e37d5b"></script>
         <script defer data-domain="inseldu.de" src="https://analytics.coolify.inseldu.de/js/script.js"></script>
         <div className={theme}>
           <DarkModeSwitch theme={theme} setTheme={setTheme} />
