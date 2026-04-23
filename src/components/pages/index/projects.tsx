@@ -4,9 +4,7 @@ import Paragraphs from "../../paragraphs";
 import ProjectCard from "../../project-card";
 import Section from "../../section";
 
-interface ProjectsProps {}
-
-const Projects: FC<ProjectsProps> = (props) => {
+const Projects: FC = () => {
   const { t } = useTranslation("index-page");
   return (
     <Section id="projects">
@@ -19,8 +17,6 @@ const Projects: FC<ProjectsProps> = (props) => {
           type={t("projects.partymate.type")}
           url="https://partymate.party"
           imageURL="/partymate.png"
-          imageWidth={600}
-          imageHeight={340}
         >
           <Paragraphs text={t("projects.partymate.description")} />
         </ProjectCard>
@@ -28,8 +24,6 @@ const Projects: FC<ProjectsProps> = (props) => {
           title={t("projects.binckebanck.title")}
           type={t("projects.binckebanck.type")}
           url="https://binckebanck.com"
-          imageWidth={800}
-          imageHeight={570}
           imageURL="/binckebanck.png"
         >
           <Paragraphs text={t("projects.binckebanck.description")} />
@@ -38,8 +32,6 @@ const Projects: FC<ProjectsProps> = (props) => {
           title={t("projects.memoryMachine.title")}
           type={t("projects.memoryMachine.type")}
           url="https://memorymachine.de"
-          imageWidth={800}
-          imageHeight={450}
           imageURL="/memory-machine.png"
         >
           <Paragraphs text={t("projects.memoryMachine.description")} />
@@ -50,8 +42,6 @@ const Projects: FC<ProjectsProps> = (props) => {
           githubURL="https://github.com/yanniz0r/sonq"
           url="https://sonq.de"
           imageURL="/sonq.png"
-          imageWidth={800}
-          imageHeight={600}
         >
           <Paragraphs text={t("projects.sonq.description")} />
         </ProjectCard>
@@ -59,8 +49,6 @@ const Projects: FC<ProjectsProps> = (props) => {
           title={t("projects.reverbOrdermanager.title")}
           type={t("projects.reverbOrdermanager.type")}
           imageURL="/reverb-order-manager.png"
-          imageWidth={800}
-          imageHeight={600}
         >
           <Paragraphs text={t("projects.reverbOrdermanager.description")} />
         </ProjectCard>
@@ -69,8 +57,6 @@ const Projects: FC<ProjectsProps> = (props) => {
           type={t("projects.spicyChances.type")}
           imageURL="/spicy-chances.png"
           url="https://spicychances.de"
-          imageWidth={800}
-          imageHeight={600}
         >
           <Paragraphs text={t("projects.spicyChances.description")} />
         </ProjectCard>
@@ -79,8 +65,6 @@ const Projects: FC<ProjectsProps> = (props) => {
           type={t("projects.invocraft.type")}
           imageURL="/invocraft.png"
           url="https://preview.invocraft.de"
-          imageWidth={800}
-          imageHeight={600}
         >
           <Paragraphs text={t("projects.invocraft.description")} />
         </ProjectCard>

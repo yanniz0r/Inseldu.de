@@ -1,13 +1,10 @@
 import { FC, PropsWithChildren } from "react";
 import Button from "./button";
 import { FaGithub, FaLink } from "react-icons/fa";
-import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
 interface ProjectCardProps extends PropsWithChildren {
   imageURL: string;
-  imageWidth: number;
-  imageHeight: number;
   type: string;
   githubURL?: string;
   url?: string;
@@ -18,12 +15,10 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
   const { t } = useTranslation("project-card-component");
   return (
     <div className="flex flex-col overflow-hidden rounded-lg bg-white shadow-xl dark:bg-slate-800">
-      <Image
+      <img
         src={props.imageURL}
         alt={`${props.title} (${props.type})`}
-        objectFit="cover"
-        height={props.imageHeight}
-        width={props.imageWidth}
+        className="w-full object-cover"
       />
       <div className="flex flex-grow flex-col p-5">
         <div className=" flex-grow">

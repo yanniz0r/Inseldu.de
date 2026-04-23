@@ -1,8 +1,6 @@
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../../button";
-import Image from "next/image";
-import meHeroPicture from "../../../public/me-hero.jpg";
 import logoPicture from "./logo.svg";
 
 const Hero: FC = () => {
@@ -11,7 +9,7 @@ const Hero: FC = () => {
     <div className="relative h-screen lg:grid lg:grid-cols-2 bg">
       <div className="relative z-10 flex h-screen w-full items-center bg-gray-100 bg-opacity-90 dark:bg-slate-800 lg:bg-opacity-100 dark:lg:bg-opacity-100">
         <div className="flex flex-col gap-5 px-10 lg:px-28">
-          <Image src={logoPicture} alt="Logo" className="w-56 lg:mx-auto dark:invert" />
+          <img src={logoPicture} alt="Logo" className="w-56 lg:mx-auto dark:invert" />
           <small className="text-2xl font-light text-slate-900 dark:text-slate-200">
             {t("hero.hello")}
           </small>
@@ -34,7 +32,7 @@ const Hero: FC = () => {
         </div>
       </div>
       <div className="absolute lg:relative top-0 left-0 z-0 h-full w-full">
-        <Image src={meHeroPicture} alt="Yannic Inselmann" className="w-full h-full object-cover" />
+        <img src="/me-hero.jpg" alt="Yannic Inselmann" className="w-full h-full object-cover" />
       </div>
     </div>
   );
