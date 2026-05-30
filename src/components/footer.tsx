@@ -1,39 +1,27 @@
 import { FC } from "react";
-import { FaLinkedin, FaTwitch, FaTwitter, FaXing } from "react-icons/fa";
-import SocialLink from "./social-link";
+import { useTranslation } from "react-i18next";
 
 const Footer: FC = () => {
+  const { t } = useTranslation("index-page");
   const year = new Date().getFullYear();
   return (
-    <div className="flex flex-row flex-wrap items-center bg-gradient-to-r from-slate-800 to-slate-700 px-28 py-14 dark:border-t dark:border-t-slate-600">
-      <div className="w-full md:w-auto">
-        <p className="py-5 text-center text-slate-200 md:text-left">
-          Yannic Inselmann &middot; {year}
-        </p>
+    <footer className="w-full pt-section-gap pb-gutter bg-surface border-t border-border-subtle">
+      <div className="max-w-[1440px] mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md">
+        <div className="flex items-center gap-stack-md">
+          <span className="font-headline-sm font-bold text-on-surface">Yannic Inselmann.</span>
+          <span className="hidden md:block w-8 h-px bg-border-subtle"></span>
+          <p className="font-body-md text-body-md text-slate-text">
+            &copy; 2024 – {year} Yannic Inselmann. {t("footer.tagline")}
+          </p>
+        </div>
+        <div className="flex gap-10">
+          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://github.com/yanniz0r">{t("footer.github")}</a>
+          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://de.linkedin.com/in/yannic-inselmann-7178a415a">{t("footer.linkedin")}</a>
+          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://twitter.com/yanniz0r">{t("footer.twitter")}</a>
+          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://www.xing.com/profile/Yannic_Inselmann">{t("footer.email")}</a>
+        </div>
       </div>
-      <div className="flex w-full flex-grow items-center justify-center gap-3 md:w-auto md:justify-end">
-        <SocialLink name="Twitter" color="#1da1f2" href="https://twitter.com/yanniz0r">
-          <FaTwitter />
-        </SocialLink>
-        <SocialLink name="Twitch" color="#9146ff" href="https://www.twitch.tv/yanniz0r">
-          <FaTwitch />
-        </SocialLink>
-        <SocialLink
-          name="Xing"
-          color="#026466"
-          href="https://www.xing.com/profile/Yannic_Inselmann"
-        >
-          <FaXing />
-        </SocialLink>
-        <SocialLink
-          name="LinkedIn"
-          color="#0077b5"
-          href="https://de.linkedin.com/in/yannic-inselmann-7178a415a"
-        >
-          <FaLinkedin />
-        </SocialLink>
-      </div>
-    </div>
+    </footer>
   );
 };
 

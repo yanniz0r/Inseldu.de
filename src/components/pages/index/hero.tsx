@@ -1,40 +1,54 @@
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../../button";
-import logoPicture from "./logo.svg";
 
 const Hero: FC = () => {
   const { t } = useTranslation("index-page");
+
+  const scrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) window.scrollTo({ top: el.offsetTop - 80, behavior: 'smooth' });
+  };
+
   return (
-    <div className="relative h-screen lg:grid lg:grid-cols-2 bg">
-      <div className="relative z-10 flex h-screen w-full items-center bg-gray-100 bg-opacity-90 dark:bg-slate-800 lg:bg-opacity-100 dark:lg:bg-opacity-100">
-        <div className="flex flex-col gap-5 px-10 lg:px-28">
-          <img src={logoPicture} alt="Logo" className="w-56 lg:mx-auto dark:invert" />
-          <small className="text-2xl font-light text-slate-900 dark:text-slate-200">
-            {t("hero.hello")}
-          </small>
-          <div>
-            <span className="bg-gradient inline bg-gradient-to-r from-indigo-700 to-emerald-400 box-decoration-clone p-1 text-5xl font-extrabold leading-normal text-white dark:from-indigo-500 dark:to-emerald-500 rounded-md">
-              {t("hero.name")}
+    <section className="min-h-[80vh] flex items-center max-w-[1440px] mx-auto px-gutter py-section-gap" id="intro">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center w-full">
+        <div className="space-y-stack-md">
+          <div className="flex items-center gap-stack-sm text-secondary font-label-caps text-label-caps uppercase">
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
             </span>
+            {t("hero.available")}
           </div>
-          <p className="text-2xl font-light text-slate-900 dark:text-slate-200">
+          <h1 className="font-display-xl text-display-xl tracking-tight text-on-surface">
+            {t("hero.hello")}{" "}
+            <span className="text-primary">{t("hero.name")}</span>.
+          </h1>
+          <p className="font-body-lg text-body-lg text-slate-text max-w-xl">
             {t("hero.what")}
           </p>
-          <div className="mt-5 flex gap-5">
-            <Button color="primary" variant="outlined" href="https://www.xing.com/profile/Yannic_Inselmann">
-              {t("hero.contactCTA")}
+          <div className="flex items-center gap-gutter pt-stack-md">
+            <Button size="lg" onClick={() => scrollTo('projects')}>
+              {t("hero.viewProjects")}
             </Button>
-            <Button color="primary" variant="solid" href="#projects">
-              {t("hero.projectsCTA")}
+            <Button size="lg" variant="outlined" onClick={() => scrollTo('contact')}>
+              {t("hero.getInTouch")}
             </Button>
           </div>
         </div>
+        <div className="relative group">
+          <div className="absolute -inset-4 bg-primary/5 rounded-[2rem] -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+          <div className="relative aspect-[1.5] rounded-xl overflow-hidden border border-border-subtle bg-surface-container-low shadow-sm">
+            <img
+              alt="Yannic Inselmann"
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              src="/me-hero.jpg"
+            />
+          </div>
+        </div>
       </div>
-      <div className="absolute lg:relative top-0 left-0 z-0 h-full w-full">
-        <img src="/me-hero.jpg" alt="Yannic Inselmann" className="w-full h-full object-cover" />
-      </div>
-    </div>
+    </section>
   );
 };
 

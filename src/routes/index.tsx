@@ -3,6 +3,7 @@ import Footer from '../components/footer'
 import Hero from '../components/pages/index/hero'
 import Projects from '../components/pages/index/projects'
 import Techstack from '../components/pages/index/techstack'
+import Contact from '../components/pages/index/contact'
 import pagesTranslations from '../locales/en/pages.json'
 
 export const Route = createFileRoute('/')({
@@ -21,6 +22,7 @@ function HomePage() {
       <Hero />
       <Projects />
       <Techstack />
+      <Contact />
       <Footer />
     </>
   )

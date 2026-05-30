@@ -38,7 +38,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
               <Button
                 variant="solid"
                 color="primary"
-                dimension="sm"
+                size="sm"
                 href={props.url}
                 icon={<FaLink />}
               >
@@ -48,8 +48,8 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
             {props.githubURL && (
               <Button
                 variant="solid"
-                color="black"
-                dimension="sm"
+                color="dark"
+                size="sm"
                 href={props.githubURL}
                 icon={<FaGithub />}
               >

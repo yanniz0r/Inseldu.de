@@ -1,15 +1,15 @@
 {
   "project-card-component": {
-    "visit": "Visit",
+    "visit": "Besuchen",
     "code": "Code"
   },
   "nav": {
     "intro": "Intro",
-    "projects": "Projects",
+    "projects": "Projekte",
     "techstack": "Techstack",
-    "contact": "Contact",
-    "resume": "Resume",
-    "availableForProjects": "Available for Projects",
+    "contact": "Kontakt",
+    "resume": "Lebenslauf",
+    "availableForProjects": "Verfügbar für Projekte",
     "leadSoftwareDeveloper": "Lead Software Developer"
   }
 }

@@ -9,20 +9,26 @@
     "prettier": "prettier --write ."
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "@fontsource-variable/sora": "^5.2.8",
+    "@fontsource/material-symbols-outlined": "^5.2.45",
+    "@tanstack/react-form": "^1.33.0",
     "@tanstack/react-router": "^1.0.0",
     "@tanstack/react-start": "^1.0.0",
     "@types/bun": "^1.3.12",
+    "class-variance-authority": "^0.7.1",
     "classnames": "^2.3.2",
     "i18next": "^22.4.15",
-    "nodemailer": "^6.9.1",
+    "lucide-react": "^1.17.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.2.2",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^20.1.1",
-    "@types/nodemailer": "^6.4.7",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.6",
     "@vitejs/plugin-react": "^4.3.0",

@@ -5,59 +5,100 @@
       "description": "Hello, my name is Yannic Inselmann. I'm a software developer from germany with focus on webdevelopment. Learn more about me and my work..."
     },
     "hero": {
+      "available": "Available for new opportunities",
       "hello": "Hello, my name is",
       "name": "Yannic Inselmann",
-      "what": "I am a lead software developer @ Whiskey Tango Foxtrot, Freelancer and always curious for challenging sideprojects.",
+      "what": "I am a senior software developer at kolum, Freelancer and always curious for challenging sideprojects.",
       "contactCTA": "Get in touch",
-      "projectsCTA": "Projects"
+      "projectsCTA": "Projects",
+      "viewProjects": "View Projects",
+      "getInTouch": "Get In Touch"
     },
     "projects": {
+      "label": "Selected Works",
+      "heading": "Featured Projects",
+      "subtitle": "A curation of enterprise-grade applications and open-source contributions.",
+      "visitProject": "Visit Project",
+      "recentHighlight": "Recent Highlight",
+      "invocraftSubtitle": "Enterprise Billing at Scale",
       "partymate": {
         "title": "Partymate",
-        "type": "Backend and Mobile",
-        "description": "As part of a great team, I got the opportunity to work on the mobile app Partymate. It's a social network for party fans - definitely worth a try!\nI've been mostly working on the mobile app, backend and infrastructure. Furthermore, I supported other parts of the projects to support continuous deployment."
+        "category": "Backend & Mobile",
+        "description": "Social network for party fans with real-time features and a mobile app for iOS and Android."
       },
       "binckebanck": {
         "title": "Binckebanck.com",
-        "type": "Blog",
-        "description": "A simple and reliable project for Prof. Dr. Lars Binckebanck. This projects focused on simple static pages and a blog around the well known content management system Wordpress."
+        "category": "Blog",
+        "description": "A simple and reliable project for Prof. Dr. Lars Binckebanck. Focused on static pages and a blog built around WordPress."
       },
       "memoryMachine": {
         "title": "Memory Machine",
-        "type": "Frontend",
-        "description": "As part of the project \"digital memory\", AMCHA wanted to find digital solutions to provide knowlege about the holocaust. Some very talentend game designers and myself created a digital experience to learn about the holocaust through the second world war."
+        "category": "Frontend",
+        "description": "A digital experience providing knowledge about the holocaust through interactive storytelling."
       },
       "sonq": {
         "title": "Sonq",
-        "type": "Fullstack",
-        "description": "A little song quiz I've been working on in my freetime. It allows you to find out whom of your friends can identify the most songs by just listening to them."
+        "category": "Fullstack",
+        "description": "A song quiz to find out which of your friends can identify the most songs by ear."
       },
       "reverbOrdermanager": {
         "title": "Reverb Ordermanager",
-        "type": "Fullstack",
-        "description": "I've been requested to improve the shipping process of small German music instrument builder who is selling his products through Reverb.\nThis application fetches orders awaiting shipment from reverb and allows to create a DHL delivery. It also provides presets for customs declaration, package sizes and a history of sent packages."
+        "category": "Fullstack",
+        "description": "Shipping automation for a musical instrument builder integrating Reverb marketplace and DHL APIs."
       },
       "spicyChances": {
         "title": "Spicy Chances",
-        "type": "Frontend",
-        "description": "A website that I've built for my personal music project Spicy Chances. It's very basic so far but it will be a starting point for more features in the future."
+        "category": "Frontend",
+        "description": "A website for my personal music project Spicy Chances — a starting point for more features in the future."
       },
       "invocraft": {
         "title": "Invocraft",
-        "type": "Fullstack",
-        "description": "A SaaS for creating invoices. I've been working on it as a side project to create an invoicing solution that is easy to use and cheap. It's still in development but I and some of my friends are using it for my their invoices already."
+        "category": "Fullstack",
+        "description": "A SaaS for creating invoices — easy to use, free, and already in use by me and friends for real invoicing."
       }
     },
     "techstack": {
-      "title": "Techstack",
-      "description": "I believe that each problem deserves to be resolved with technology that fits the use case. However, the following tools, frameworks and methodologies proofed themselves as helpful in my past projects. You should see it as a toolbox of technologies the I like to use. I'm always curious to get to know technologies though.",
-      "categories": {
-        "languagesAndRuntimes": "Languages & Runtimes",
+      "label": "Core Capabilities",
+      "heading": "The Stack",
+      "categoryTitles": {
+        "languages": "Languages",
         "frontend": "Frontend",
-        "APIs": "APIs",
-        "operationsAndHosting": "Operations & Hosting",
-        "databases": "Databases"
+        "backend": "Backend",
+        "tools": "Tools",
+        "testing": "Testing",
+        "infrastructure": "Infrastructure",
+        "mobile": "Mobile"
       }
+    },
+    "contact": {
+      "label": "Get in Touch",
+      "title": "Let's build something extraordinary.",
+      "description": "Whether you have a specific project in mind or just want to talk about system architecture, my inbox is always open.",
+      "email": "hello@inselmann.online",
+      "location": "~Hamburg, Germany",
+      "successTitle": "Message sent!",
+      "successSubtitle": "I'll get back to you soon.",
+      "errorTitle": "Failed to send",
+      "fieldName": "Name",
+      "fieldNamePlaceholder": "John Doe",
+      "fieldEmail": "Email",
+      "fieldEmailPlaceholder": "john@example.com",
+      "fieldScope": "Project Scope",
+      "fieldMessage": "Message",
+      "fieldMessagePlaceholder": "Tell me about your project...",
+      "submit": "Send Message",
+      "submitting": "Sending\u2026"
+    },
+    "footer": {
+      "tagline": "Built with precision.",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "email": "Email"
+    },
+    "notFound": {
+      "message": "Whoa, this page doesn't exist.",
+      "cta": "Take me Home"
     }
   }
 }

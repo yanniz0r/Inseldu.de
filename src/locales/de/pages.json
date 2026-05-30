@@ -1,0 +1,104 @@
+{
+  "index-page": {
+    "title": "Yannic Inselmann",
+    "meta": {
+      "description": "Hallo, ich bin Yannic Inselmann. Ich bin Softwareentwickler aus Deutschland mit Fokus auf Webentwicklung. Erfahre mehr über mich und meine Arbeit..."
+    },
+    "hero": {
+      "available": "Verfügbar für neue Projekte",
+      "hello": "Hallo, mein Name ist",
+      "name": "Yannic Inselmann",
+      "what": "Ich bin Senior Software Developer bei kolum, Freelancer und immer neugierig auf spannende Nebenprojekte.",
+      "contactCTA": "Kontakt aufnehmen",
+      "projectsCTA": "Projekte",
+      "viewProjects": "Projekte ansehen",
+      "getInTouch": "Kontakt aufnehmen"
+    },
+    "projects": {
+      "label": "Ausgewählte Arbeiten",
+      "heading": "Ausgewählte Projekte",
+      "subtitle": "Eine Auswahl an unternehmensrelevanten Anwendungen und Open-Source-Beiträgen.",
+      "visitProject": "Projekt besuchen",
+      "recentHighlight": "Aktueller Höhepunkt",
+      "invocraftSubtitle": "Enterprise-Abrechnung im großen Maßstab",
+      "partymate": {
+        "title": "Partymate",
+        "category": "Backend & Mobile",
+        "description": "Soziales Netzwerk für Partyfans mit Echtzeit-Funktionen und einer mobilen App für iOS und Android."
+      },
+      "binckebanck": {
+        "title": "Binckebanck.com",
+        "category": "Blog",
+        "description": "Ein einfaches und zuverlässiges Projekt für Prof. Dr. Lars Binckebanck. Fokus auf statische Seiten und einen Blog auf Basis von WordPress."
+      },
+      "memoryMachine": {
+        "title": "Memory Machine",
+        "category": "Frontend",
+        "description": "Ein digitales Erlebnis, das Wissen über den Holocaust durch interaktives Storytelling vermittelt."
+      },
+      "sonq": {
+        "title": "Sonq",
+        "category": "Fullstack",
+        "description": "Ein Song-Quiz, um herauszufinden, wer von deinen Freunden die meisten Songs nur nach dem Klang erkennt."
+      },
+      "reverbOrdermanager": {
+        "title": "Reverb Ordermanager",
+        "category": "Fullstack",
+        "description": "Versandautomatisierung für einen Musikinstrumentenbauer – Integration von Reverb-Marktplatz und DHL-API."
+      },
+      "spicyChances": {
+        "title": "Spicy Chances",
+        "category": "Frontend",
+        "description": "Eine Website für mein persönliches Musikprojekt Spicy Chances – ein Ausgangspunkt für zukünftige Features."
+      },
+      "invocraft": {
+        "title": "Invocraft",
+        "category": "Fullstack",
+        "description": "Ein SaaS für die Rechnungserstellung – einfach zu bedienen, gratis  und bereits von mir und Freunden im Einsatz."
+      }
+    },
+    "techstack": {
+      "label": "Kernkompetenzen",
+      "heading": "Der Stack",
+      "categoryTitles": {
+        "languages": "Sprachen",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "tools": "Tools",
+        "testing": "Testing",
+        "infrastructure": "Infrastruktur",
+        "mobile": "Mobile"
+      }
+    },
+    "contact": {
+      "label": "Kontakt aufnehmen",
+      "title": "Lass uns gemeinsam etwas Außergewöhnliches bauen.",
+      "description": "Ob du ein konkretes Projekt im Kopf hast oder einfach über Systemarchitektur sprechen möchtest – mein Posteingang ist immer offen.",
+      "email": "hello@inselmann.online",
+      "location": "~Hamburg, Deutschland",
+      "successTitle": "Nachricht gesendet!",
+      "successSubtitle": "Ich melde mich bald bei dir.",
+      "errorTitle": "Senden fehlgeschlagen",
+      "fieldName": "Name",
+      "fieldNamePlaceholder": "Max Mustermann",
+      "fieldEmail": "E-Mail",
+      "fieldEmailPlaceholder": "max@beispiel.de",
+      "fieldScope": "Projektbereich",
+      "fieldMessage": "Nachricht",
+      "fieldMessagePlaceholder": "Erzähl mir von deinem Projekt...",
+      "submit": "Nachricht senden",
+      "submitting": "Wird gesendet\u2026"
+    },
+    "footer": {
+      "tagline": "Mit Präzision gebaut.",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "email": "E-Mail"
+    },
+    "notFound": {
+      "message": "Diese Seite existiert leider nicht.",
+      "cta": "Zurück zur Startseite"
+    }
+  }
+}
