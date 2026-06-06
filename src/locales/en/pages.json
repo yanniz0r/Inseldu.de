@@ -54,7 +54,7 @@
       "invocraft": {
         "title": "Invocraft",
         "category": "Fullstack",
-        "description": "A SaaS for creating invoices — easy to use, free, and already in use by me and friends for real invoicing."
+        "description": "A lightweight invoicing app — my personal take on it, used day to day by a few friends and me."
       }
     },
     "techstack": {
