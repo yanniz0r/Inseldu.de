@@ -20,6 +20,8 @@ export const Route = createRootRoute({
     links: [
       { rel: 'preload', href: appCss, as: 'style' },
       { rel: 'stylesheet', href: appCss },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      { rel: 'apple-touch-icon', href: '/favicon.png' },
     ],
   }),
   component: RootComponent,
