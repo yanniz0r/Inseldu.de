@@ -15,10 +15,10 @@ const Footer: FC = () => {
           </p>
         </div>
         <div className="flex gap-10">
-          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://github.com/yanniz0r">{t("footer.github")}</a>
-          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://de.linkedin.com/in/yannic-inselmann-7178a415a">{t("footer.linkedin")}</a>
-          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://twitter.com/yanniz0r">{t("footer.twitter")}</a>
-          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://www.xing.com/profile/Yannic_Inselmann">{t("footer.email")}</a>
+          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://github.com/yanniz0r" data-umami-event="footer-social-click" data-umami-event-network="github">{t("footer.github")}</a>
+          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://de.linkedin.com/in/yannic-inselmann-7178a415a" data-umami-event="footer-social-click" data-umami-event-network="linkedin">{t("footer.linkedin")}</a>
+          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://twitter.com/yanniz0r" data-umami-event="footer-social-click" data-umami-event-network="twitter">{t("footer.twitter")}</a>
+          <a className="text-slate-text hover:text-primary transition-colors font-medium" href="https://www.xing.com/profile/Yannic_Inselmann" data-umami-event="footer-social-click" data-umami-event-network="xing">{t("footer.email")}</a>
         </div>
       </div>
     </footer>

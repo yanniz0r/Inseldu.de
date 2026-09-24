@@ -29,10 +29,10 @@ const Hero: FC = () => {
             {t("hero.what")}
           </p>
           <div className="flex items-center gap-gutter pt-stack-md">
-            <Button size="lg" onClick={() => scrollTo('projects')}>
+            <Button size="lg" onClick={() => scrollTo('projects')} data-umami-event="hero-view-projects">
               {t("hero.viewProjects")}
             </Button>
-            <Button size="lg" variant="outlined" onClick={() => scrollTo('contact')}>
+            <Button size="lg" variant="outlined" onClick={() => scrollTo('contact')} data-umami-event="hero-get-in-touch">
               {t("hero.getInTouch")}
             </Button>
           </div>

@@ -108,6 +108,8 @@ function NavDrawer({ isOpen, onClose, activeSection }: { isOpen: boolean; onClos
                   ? 'bg-primary-container text-primary'
                   : 'text-on-surface-variant hover:bg-surface-container-high'
               }`}
+              data-umami-event="nav-drawer-click"
+              data-umami-event-section={id}
             >
               <span className="font-body-md capitalize">{t(id)}</span>
             </button>
@@ -118,6 +120,7 @@ function NavDrawer({ isOpen, onClose, activeSection }: { isOpen: boolean; onClos
           <button
             onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'de' : 'en')}
             className="font-label-caps text-[11px] uppercase tracking-widest border border-border-subtle rounded-full px-3 py-1.5 text-slate-text hover:text-primary hover:border-primary transition-colors"
+            data-umami-event="language-toggle"
           >
             {i18n.language === 'en' ? 'Auf Deutsch wechseln' : 'Switch to English'}
           </button>
@@ -167,16 +170,19 @@ function RootComponent() {
                         ? 'text-primary border-b-2 border-primary pb-1'
                         : 'text-slate-text hover:text-primary'
                     }`}
+                    data-umami-event="nav-click"
+                    data-umami-event-section={id}
                   >
                     {t(id)}
                   </a>
                 ))}
-                <Button href="https://de.linkedin.com/in/yannic-inselmann-7178a415a" size="md">
+                <Button href="https://de.linkedin.com/in/yannic-inselmann-7178a415a" size="md" data-umami-event="nav-resume-click">
                   {t('resume')}
                 </Button>
                 <button
                   onClick={toggleLang}
                   className="font-label-caps text-[11px] uppercase tracking-widest border border-border-subtle rounded-full px-3 py-1.5 text-slate-text hover:text-primary hover:border-primary transition-colors"
+                  data-umami-event="language-toggle"
                 >
                   {i18n.language === 'en' ? 'DE' : 'EN'}
                 </button>
@@ -185,6 +191,7 @@ function RootComponent() {
                 className="md:hidden text-on-surface p-2"
                 onClick={() => setDrawerOpen(true)}
                 aria-label="Open menu"
+                data-umami-event="mobile-menu-open"
               >
                 <Menu size={24} />
               </button>

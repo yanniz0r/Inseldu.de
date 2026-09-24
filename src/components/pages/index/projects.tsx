@@ -40,6 +40,8 @@ const ProjectCard: FC<ProjectCardProps & { visitLabel: string }> = ({ title, cat
         <a
           className="inline-flex items-center gap-2 text-primary font-semibold hover:underline group/link"
           href={url}
+          data-umami-event="project-visit"
+          data-umami-event-project={title}
         >
           {visitLabel}
           <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
@@ -142,6 +144,8 @@ const Projects: FC = () => {
             <a
               href="https://preview.invocraft.de"
               className="inline-block"
+              data-umami-event="project-visit"
+              data-umami-event-project="Invocraft"
             >
               <Button size="lg" color="primary">
                 {t("projects.visitProject")}

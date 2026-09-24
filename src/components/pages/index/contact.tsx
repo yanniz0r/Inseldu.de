@@ -5,6 +5,7 @@ import { Mail, MapPin, AlertCircle, CheckCircle2 } from "lucide-react";
 import { sendContactEmail } from "../../../server/email";
 import { contactSchema, type ContactInput } from "../../../lib/contact-schema";
 import { useAppForm } from "../../../lib/form";
+import { trackEvent } from "../../../lib/analytics";
 
 const SCOPES = ['System Architecture', 'Full-stack Development', 'Consulting', 'Other'] as const;
 
@@ -28,9 +29,11 @@ const Contact: FC = () => {
       try {
         await sendContactEmail({ data: value });
         setStatus('success');
+        trackEvent('contact-form-submit', { scope: value.scope, result: 'success' });
       } catch (err) {
         setStatus('error');
         setErrorMsg(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
+        trackEvent('contact-form-submit', { scope: value.scope, result: 'error' });
       }
     },
   });
