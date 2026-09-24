@@ -17,10 +17,10 @@
     "projects": {
       "label": "Selected Works",
       "heading": "Featured Projects",
-      "subtitle": "A curation of enterprise-grade applications and open-source contributions.",
+      "subtitle": "A mix of projects — from small personal builds to bigger applications.",
       "visitProject": "Visit Project",
       "recentHighlight": "Recent Highlight",
-      "invocraftSubtitle": "Enterprise Billing at Scale",
+      "invocraftSubtitle": "Invoicing, without the headache",
       "partymate": {
         "title": "Partymate",
         "category": "Backend & Mobile",

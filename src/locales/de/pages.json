@@ -17,10 +17,10 @@
     "projects": {
       "label": "Ausgewählte Arbeiten",
       "heading": "Ausgewählte Projekte",
-      "subtitle": "Eine Auswahl an unternehmensrelevanten Anwendungen und Open-Source-Beiträgen.",
+      "subtitle": "Eine Auswahl an Projekten – von kleinen Herzensprojekten bis zu größeren Anwendungen.",
       "visitProject": "Projekt besuchen",
       "recentHighlight": "Aktueller Höhepunkt",
-      "invocraftSubtitle": "Enterprise-Abrechnung im großen Maßstab",
+      "invocraftSubtitle": "Rechnungen schreiben, ohne Kopfschmerzen",
       "partymate": {
         "title": "Partymate",
         "category": "Backend & Mobile",
