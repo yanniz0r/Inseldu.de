@@ -55,6 +55,11 @@
         "title": "Invocraft",
         "category": "Fullstack",
         "description": "A lightweight invoicing app — my personal take on it, used day to day by a few friends and me."
+      },
+      "jptrfx": {
+        "title": "JPTRFX.com",
+        "category": "E-Commerce",
+        "description": "Migrated an existing online shop to Shopify, including custom theme and app extensions."
       }
     },
     "techstack": {

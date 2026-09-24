@@ -55,6 +55,11 @@
         "title": "Invocraft",
         "category": "Fullstack",
         "description": "Eine schlanke App zum Erstellen von Rechnungen – meine persönliche Variante, die ich und einige Freunde im Alltag nutzen."
+      },
+      "jptrfx": {
+        "title": "JPTRFX.com",
+        "category": "E-Commerce",
+        "description": "Migration eines bestehenden Onlineshops zu Shopify inklusive individueller Theme- und App-Erweiterungen."
       }
     },
     "techstack": {

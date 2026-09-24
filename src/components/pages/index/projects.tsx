@@ -74,7 +74,7 @@ const Projects: FC = () => {
     {
       title: t("projects.memoryMachine.title"),
       category: t("projects.memoryMachine.category"),
-      tags: ["REACT", "THREE.JS"],
+      tags: ["REACT", "UNITY"],
       description: t("projects.memoryMachine.description"),
       image: "/memory-machine.png",
       url: "https://memorymachine.de",
@@ -101,6 +101,14 @@ const Projects: FC = () => {
       description: t("projects.spicyChances.description"),
       image: "/spicy-chances.png",
       url: "https://spicychances.de",
+    },
+    {
+      title: t("projects.jptrfx.title"),
+      category: t("projects.jptrfx.category"),
+      tags: ["SHOPIFY", "LIQUID", "TS"],
+      description: t("projects.jptrfx.description"),
+      image: "/jptrfx.png",
+      url: "https://jptrfx.com",
     },
   ];
 
