@@ -60,6 +60,11 @@
         "title": "JPTRFX.com",
         "category": "E-Commerce",
         "description": "Migrated an existing online shop to Shopify, including custom theme and app extensions."
+      },
+      "neverHaveIEver": {
+        "title": "Never Have I Ever",
+        "category": "Game",
+        "description": "An online version of the classic party game — play together in multiplayer, with question categories from casual to deep."
       }
     },
     "techstack": {

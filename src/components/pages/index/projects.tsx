@@ -112,6 +112,14 @@ const Projects: FC = () => {
       image: "/jptrfx.png",
       url: "https://jptrfx.com",
     },
+    {
+      title: t("projects.neverHaveIEver.title"),
+      category: t("projects.neverHaveIEver.category"),
+      tags: ["TANSTACK START"],
+      description: t("projects.neverHaveIEver.description"),
+      image: "/neverhaveiever.png",
+      url: "https://neverhaveiever.de",
+    },
   ];
 
   return (

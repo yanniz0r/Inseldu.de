@@ -60,6 +60,11 @@
         "title": "JPTRFX.com",
         "category": "E-Commerce",
         "description": "Migration eines bestehenden Onlineshops zu Shopify inklusive individueller Theme- und App-Erweiterungen."
+      },
+      "neverHaveIEver": {
+        "title": "Never Have I Ever",
+        "category": "Spiel",
+        "description": "Eine Online-Version des klassischen Partyspiels – gemeinsam im Multiplayer spielbar, mit Fragekategorien von locker bis tiefgründig."
       }
     },
     "techstack": {
